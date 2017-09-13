@@ -1,0 +1,9 @@
+Dear {{ user.name }}
+
+{{ follower.name }} is now a follower. Click on the following link to visit {{ follower.name }}'s profile page:
+
+{{ url_for('user', name = follower.name, _external = True) }}
+
+Regards,
+
+The Listomania Team
