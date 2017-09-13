@@ -1,0 +1,13 @@
+- Venv
+- Flask
+	- mail
+	- SQLite
+	- SQLAlchemy
+	- WTForms
+	- LoginManager
+	- WhooshAlchemy
+- OS
+- Unittest
+- Threading
+- Werkzeug
+- Datetime
