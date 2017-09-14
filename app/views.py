@@ -79,7 +79,7 @@ def login():
         flash('You are already signed in')
         return redirect(url_for('index'))
     form = LoginForm(request.form)
-    if form.validate_on_submit:
+    if form.validate_on_submit():
         user = User.query.filter_by(email = form.email.data).first()
         if user is not None and check_password_hash(user.password, form.password.data):
             remember_me = False
